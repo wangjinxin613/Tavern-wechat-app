@@ -1,0 +1,7 @@
+<!--index.wxml-->
+<view class="index-head-img">
+	<image src="/img/head-img.png" mode="widthFix"></image>
+
+		<image src="/img/zahuodian.png" mode="widthFix" class="zahuodian"></image>
+
+</view>

@@ -1,0 +1,15 @@
+/**index.wxss**/
+page{
+	background: rgb(234,230,227)
+}
+.zahuodian{
+	width: 600px;
+	overflow:scroll;
+	display: flex; 
+	margin-top: 140px;
+}
+.index-head-img image:first-child{
+	width:100%;
+	position: fixed;
+	top:0;
+}

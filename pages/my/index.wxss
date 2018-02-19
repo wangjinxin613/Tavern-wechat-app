@@ -1,0 +1,101 @@
+/* pages/my/index.wxss */
+page{
+	background: rgb(239,238,241);
+}
+.border{
+	width: 50vw;
+	height: 100vh;
+	border-right: 1px solid #ccc;
+	position: fixed;
+	top:0;
+	left: 0;
+}
+.right{
+	float:right;
+}
+.left{
+	width:calc(50vw - 30px);
+	padding:0 15px;
+	margin-top: 20px;
+}
+.right .single{
+	background:rgb(124,195,182) !important;
+}
+.left .single{
+	width:calc(50vw - 45px);
+	position: relative;
+	background:rgb(236,198,60);
+	background-size: 100% 100%;
+	font-size: 12px;
+	padding:10px 5px 10px 10px;
+	border-radius: 5px;
+	box-shadow: 0 0 5px #999;
+}
+.left .single .top-text{
+	line-height: 16px;
+	height: 48px;
+	overflow-y: hidden;
+	color: #fff;
+}
+.left .single .send-user{
+	font-size: 13px;
+	text-align: center;
+	padding:8px 0 0px 0;
+	color: #333;
+}
+.crcle{
+	position: absolute;
+	width: 8px;
+	height: 8px;
+	background: #ccc;
+	left:calc(50vw - 5.65px);
+	margin-top: -55px;
+	border:2px solid #fff;
+	border-radius: 100px;
+}
+.right .time{
+	left:0 !important;
+	text-align: right;
+	width:calc(50vw - 15px);
+	float: right;
+
+}
+.time{
+	position: absolute;
+	margin-top: -65px;
+	left:calc(50vw + 15px);
+	font-size: 13px;
+
+}
+.time .t2{
+	color: #666;
+	margin-top: 2px;
+}
+.clear{
+	clear:both;
+}
+.footer{
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	background: #7CC3B6;
+}
+.footer .single{
+	background: #7CC3B6;
+	float: left;
+	width:33.3vw;
+	text-align: center;
+	padding:12px 0 8px 0;
+}
+.footer .single image{
+	width: 30px;
+	height: 30px;
+	
+}
+.foot_img2{
+	background: #7CC3B6;
+	padding:12px;
+	border:2px solid #fff;
+	border-radius: 100px;
+	margin-top: -25px;
+}

@@ -1,12 +1,16 @@
 {
-  "pages":[
-    "pages/index/index",
-    "pages/logs/logs"
-  ],
-  "window":{
-    "backgroundTextStyle":"light",
-    "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "WeChat",
-    "navigationBarTextStyle":"black"
-  }
+     "pages": [
+          "pages/index/index",
+          "pages/logs/logs",
+          "pages/add/index",
+          "pages/my/index",
+          "pages/my/detail"
+     ],
+     "window": {
+          "backgroundTextStyle": "light",
+          "navigationBarBackgroundColor": "#7CC3B6",
+          "navigationBarTitleText": "解忧小酒馆",
+          "navigationBarTextStyle": "white",
+          "navigationStyle": "default"
+     }
 }

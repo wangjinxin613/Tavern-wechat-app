@@ -27,26 +27,7 @@
 		},
 		"miniprogram": {
 			"current": -1,
-			"list": [
-				{
-					"id": -1,
-					"name": "写信",
-					"pathName": "pages/add/index",
-					"query": ""
-				},
-				{
-					"id": -1,
-					"name": "我的",
-					"pathName": "pages/my/index",
-					"query": ""
-				},
-				{
-					"id": -1,
-					"name": "信详情",
-					"pathName": "pages/my/detail",
-					"query": ""
-				}
-			]
+			"list": []
 		}
 	}
 }

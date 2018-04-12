@@ -1,0 +1,32 @@
+<view class="weui-tabbar div">
+  <view class="weui-tabbar__item btn-mine a">
+	<view class="weui-tabbar__label p">
+	  <navigator url="/rcdonkey_signup/pages/index/index" open-type="redirect" hover-class="other-navigator-hover">我的</navigator>
+	</view>
+  </view>
+  <view class="weui-tabbar__item btn-publish a">
+	<view class="weui-tabbar__label p">
+	  <navigator url="/rcdonkey_signup/pages/publish/publish" open-type="navigate" hover-class="other-navigator-hover">发布</navigator>
+	</view>
+  </view>
+  <block wx:if="{{activity.status == 3}}">
+	  <view class="weui-tabbar__item btn-share a">
+		<view class="weui-tabbar__label p">
+			<text>已结束</text>
+		</view>
+	  </view>
+</block>
+ <block wx:if="{{activity.status != 3}}">
+	  
+	  <view class="weui-tabbar__item btn-share a" wx:if="{{activity.is_manager || activity.already_join}}">
+		<view class="weui-tabbar__label p">
+			<navigator url="/rcdonkey_signup/pages/share/share?id={{activity.id}}" open-type="navigate" hover-class="other-navigator-hover">我要分享</navigator>
+		</view>
+	  </view>
+	  <view class="weui-tabbar__item btn-sign-up a" wx:else="{{!activity.is_manager}}">
+		<view class="weui-tabbar__label p">
+		  <navigator url="/rcdonkey_signup/pages/sign-up/sign-up?id={{activity.id}}" open-type="navigate" hover-class="other-navigator-hover"><text>我要报名</text></navigator>
+		</view>
+	  </view>
+  </block>
+</view>

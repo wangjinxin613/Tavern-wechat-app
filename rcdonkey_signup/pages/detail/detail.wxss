@@ -1,0 +1,2 @@
+/**app.wxss**/
+@import '../../resource/style/common.wxss';

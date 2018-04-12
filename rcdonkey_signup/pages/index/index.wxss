@@ -1,0 +1,5 @@
+/**app.wxss**/
+@import '../../resource/style/common.wxss';
+page{
+   background-color: #f5f5f5;
+}

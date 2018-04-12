@@ -1,0 +1,9 @@
+<!--pages/add/index.wxml-->
+<form bindsubmit='submit' report-submit >
+<view class="add">
+
+<textarea class="body" placeholder='酒我自己喝，故事你自己写，回不回看心情，一切随缘，请至少输入60个字' name="body" maxlength="-1"></textarea>
+</view>
+<view class="checkbox"><checkbox value="1" checked/>授权小酒馆可以公开信件</view>
+<button class="tijiao" form-type='submit'>提交</button>
+</form>

@@ -1,0 +1,50 @@
+<view class="page publish div">
+	<form bindsubmit="onFormSubmit" bindreset="onFormReset">
+  <view class="form">
+    <view class="weui-cells div">
+      <view class="weui-cell div">
+        <view class="weui-cell__bd div">
+          <input name="title" class="weui-input theme input" type="text" placeholder="活动主题" value="{{activity.title}}" />
+        </view>
+      </view>
+      <view class="weui-cell div">
+        <view class="weui-cell__bd">
+          <textarea name="description" class="weui-textarea textarea" placeholder="活动详情" value="{{activity.description}}" rows="5"></textarea>
+        </view>
+      </view>
+      <view class="weui-cell div">
+        <view class="weui-cell__hd div">
+          <view class="weui-label label">
+            <text>报名截止时间 </text>
+          </view>
+        </view>
+        <picker name="joindeadline" mode="date" value="{{joinDeadline.selected}}" start="{{joinDeadline.ranage.start}}" end="{{joinDeadline.ranage.end}}" bindchange="onJoinDeadlineDateChange">
+              <view class="picker">
+              {{joinDeadline.selected}}
+              </view>
+        </picker>
+      </view>
+       <view class="weui-cell div">
+              <view class="weui-cell__hd"><label for="" class="weui-label">每人收取费用<text class="text-muted">(线下收取)</text></label></view>
+              <view class="weui-cell__bd">
+                  <input class="weui-input" type="number" pattern="" value=""/>
+              </view>
+              <view class="weui-cell__ft">
+                  元
+              </view>
+          </view>
+    </view>
+    <view class="info-must">
+      <view>选择报名者必填信息</view>
+      <checkbox-group bindchange="checkboxChange">
+        <label class="checkbox" wx:for="{{items}}">
+          <checkbox value="{{item.name}}" checked="{{item.checked}}"/>{{item.value}}
+        </label>
+      </checkbox-group>
+    </view>
+    <view class="weui-btn-area div">
+      <button class="weui-btn weui-btn_primary btn" style="color:#fff" formType="submit">发布</button>
+    </view>
+  </view>
+  </form>
+</view>

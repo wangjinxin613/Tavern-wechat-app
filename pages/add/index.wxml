@@ -1,6 +1,0 @@
-<!--pages/add/index.wxml-->
-<view class="add">
-<input type="text" class="title" placeholder='取个标题，可以不填'></input>
-<textarea class="body" placeholder='酒我自己喝，故事你自己写，回不回看心情，一切随缘'></textarea>
-</view>
-<button class="tijiao" >提交</button>

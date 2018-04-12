@@ -1,0 +1,671 @@
+/**app.wxss**/
+@import '../../../we7/resource/style/weui.wxss';
+
+.text-over, .detail .author .nickname, .detail .weui-cells .weui-cell__bd {
+  overflow: hidden;
+  white-space: nowrap;
+  word-break: break-all;
+  text-overflow: ellipsis;
+}
+
+body {
+  height: 100%;
+}
+
+.color-success {
+  color: #75bd76;
+}
+
+image {
+  vertical-align: middle;
+  border: none;
+  max-width: 100%;
+}
+
+.pull-left {
+  float: left;
+}
+
+.pull-right {
+  float: right;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-muted{
+  color: #999;
+}
+
+.text-success{
+  color: #3fc380;
+}
+
+.label-success{
+  padding: 2px 5px;
+  color: #fff;
+  background-color: #3fc380;
+  border-radius: 3px;
+  margin-right: 3px;
+}
+
+.page {
+  font-size: 14px;
+  height: 100%;
+}
+
+.page__bd {
+  height: 100%;
+}
+
+.weui-panel {
+  border-radius: 10rpx;
+  border: 1px solid #e6e6e6;
+}
+
+.weui-tabbar {
+  position: fixed;
+}
+
+.weui-tabbar .weui-tabbar__item {
+  height: 90rpx;
+  padding: 0;
+}
+
+.weui-tabbar .weui-tabbar__label {
+  color: #4c4c4c;
+  line-height: 90rpx;
+  font-size: 16px;
+}
+
+.weui-tabbar .btn-mine {
+  flex-grow: 1;
+  background-color: #fff;
+}
+
+.weui-tabbar .btn-publish {
+  flex-grow: 1;
+  background-color: #3fc380;
+}
+
+.weui-tabbar .btn-sign-up {
+  flex-grow: 2;
+  background-color: #00b16a;
+}
+
+.weui-tabbar .btn-share {
+  flex-grow: 2;
+  background-color: #04986e;
+}
+
+.weui-tabbar .btn-share .weui-tabbar__label,
+.weui-tabbar .btn-publish .weui-tabbar__label,
+.weui-tabbar .btn-sign-up .weui-tabbar__label {
+  color: #fff;
+}
+
+.weui-tab__panel{
+  padding-top: 0;
+}
+
+.index {
+  background-color: #f5f5f5;
+  padding: 20rpx;
+}
+
+.index .empty{
+    text-align: center;
+    height: 100%;
+}
+
+.index .empty .img-msg{
+    width: 150rpx;
+    height: 150rpx;
+    margin: 150rpx 0 50rpx 0;
+}
+
+.index .empty .message{
+    font-size: 15px;
+    color: #666;
+}
+
+.index .activity {
+  color: #4c4c4c;
+  display: block;
+  padding: 30rpx;
+}
+
+.index .activity .title {
+  font-size: 17px;
+  margin-bottom: 10px;
+}
+
+.index .activity .status {
+  margin: 5px 0 10px 0;
+  color: #75bd76;
+}
+
+.index .activity .activity-info {
+  border-bottom: 1px solid #e6e6e6;
+  position: relative;
+}
+
+.index .activity .activity-info .state {
+  display: inline-block;
+  color: #fff;
+  line-height: 50rpx;
+  padding: 0 10px;
+  border-top-left-radius: 50rpx;
+  border-bottom-left-radius: 50rpx;
+  position: absolute;
+  right: -32rpx;
+  top: 30rpx;
+}
+
+.index .activity .activity-info .state.join {
+  background-color: #c9bc75;
+}
+
+.index .activity .activity-info .state.publish {
+  background-color: #75bd76;
+}
+
+.index .activity .activity-num {
+  padding-top: 10px;
+  color: #999;
+}
+
+.index .activity .activity-num .avatar-img {
+  margin-top: 16rpx;
+  font-size: 0;
+  text-align: right;
+}
+
+.index .activity .activity-num .avatar {
+  width: 50rpx;
+  height: 50rpx;
+  border-radius: 50rpx;
+  vertical-align: middle;
+  position: relative;
+}
+
+.index .activity .activity-num .avatar:nth-of-type(1) {
+  right: -15px;
+  z-index: 4;
+}
+
+.index .activity .activity-num .avatar:nth-of-type(2) {
+  right: -10px;
+  z-index: 3;
+}
+
+.index .activity .activity-num .avatar:nth-of-type(3) {
+  right: -5px;
+  z-index: 2;
+}
+
+.index .activity.over .title, .index .activity.over .status {
+  color: #999;
+}
+
+.index .operate {
+  border-top: 1px solid #e6e6e6;
+  padding: 10px 0;
+}
+
+.index .operate .edit, .index .operate .del,.index .operate .account {
+  color: #999;
+  display: block;
+  text-align: center;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.index .operate .del,index .operate .account {
+  border-left: 1px solid #e6e6e6;
+}
+
+.index .btn-publish {
+  position: fixed;
+  bottom: 50rpx;
+  left: 50%;
+  margin-left: -60rpx;
+  width: 120rpx;
+  line-height: 120rpx;
+  background-color: #3fc380;
+  border-radius: 120rpx;
+  text-align: center;
+  border: 1px solid #169317;
+}
+
+.index .btn-publish .btn {
+  display: block;
+  color: #fff;
+}
+
+.publish .theme {
+  font-size: 17px;
+}
+
+.publish .info-must{
+    padding: 20rpx 30rpx;
+    font-size: 30rpx;
+}
+
+.publish .info-must .checkbox{
+    display: block;
+    margin-top: 30rpx;
+    font-size: 28rpx;
+    color: #999;
+}
+
+.publish .weui-btn-area {
+  margin-top: 100rpx;
+}
+
+.publish .weui-btn-area .weui-btn_primary {
+  background-color: #3fc380;
+  color: #fff;
+}
+
+.detail {
+  background-color: #f5f5f5;
+}
+
+.detail .weui-tab {
+  padding: 20rpx;
+}
+
+.detail .title {
+  font-size: 17px;
+  margin: 10px 0;
+  font-weight: 600;
+}
+
+.detail .author {
+  padding: 30rpx;
+  height: 80rpx;
+  overflow: hidden;
+  border-bottom: 1px solid #e6e6e6;
+}
+
+.detail .author .avatar {
+  width: 80rpx;
+  height: 80rpx;
+  border-radius: 80rpx;
+  margin-right: 10px;
+}
+
+.detail .author .nickname {
+  display: inline-block;
+  width: 60%;
+  font-size: 16px;
+  line-height: 80rpx;
+  height: 100%;
+  vertical-align: middle;
+}
+
+.detail .author .tag {
+  float: right;
+  color: #999;
+  background-color: #f5f5f5;
+  border-radius: 3px;
+  display: inline-block;
+  padding: 0 6px;
+  line-height: 52rpx;
+  margin-top: 14rpx;
+}
+
+.detail .list {
+  padding: 0 30rpx;
+}
+
+.detail .list .item {
+  padding: 30rpx 0;
+  border-bottom: 1px solid #e6e6e6;
+}
+
+.detail .list .item .name {
+  margin-bottom: 6px;
+}
+
+.detail .list .item .time {
+  font-weight: bold;
+}
+
+.detail .join-num, .accounts .join-num {
+  overflow: hidden;
+  padding: 30rpx 30rpx 12rpx 30rpx;
+}
+
+.detail .join-num .pull-right,.accounts .join-num .pull-right{
+  width: 70%;
+  text-align: right;
+}
+
+.detail .join-num .count,.accounts .join-num .count{
+    display: inline-block;
+    height: 34px;
+    margin-left: 30px;
+}
+
+.detail .join-num .num,.accounts .join-num .num{
+    display: inline-block;
+    line-height: 8px;
+}
+
+.detail .join-num .icon,.accounts .join-num .icon{
+    width: 34rpx;
+    height: 34rpx;
+    margin-right: 5px;
+}
+
+.detail .list-applicant{
+  margin: 0 30rpx;
+}
+
+.detail .list-applicant .item{
+  border-top: 1px solid #e6e6e6;
+  padding: 20rpx 0 20rpx 80rpx;
+  position: relative;
+}
+
+.detail .list-applicant .avatar{
+  width: 60rpx;
+  height: 60rpx;
+  border-radius: 100%;
+  position: absolute;
+  top: 40rpx;
+  left: 0;
+}
+
+.detail .list-applicant .nickname{
+  padding-right: 200rpx;
+  position: relative;
+  font-size: 14px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  clear: both;
+}
+
+.detail .list-applicant .nickname .time{
+  font-size: 12px;
+  color: #999;
+  position: absolute;
+  right: 0;
+}
+
+.detail .list-applicant .message{
+    color: #808080;
+    font-size: 14px;
+}
+
+.detail .list-applicant .message-content{
+  margin: 12rpx 0;
+  overflow: hidden;
+  word-break: break-all;
+  text-overflow: ellipsis;
+}
+
+.detail .list-applicant .participant-info .tel{
+    margin: 0 20px;
+}
+
+.detail .list-applicant .participant-info .empty{
+    display: inline-block;
+    padding: 0 6px;
+    line-height: 52rpx;
+    background-color: #f5f5f5;
+    border-radius: 5px;
+}
+
+.detail .share-tips {
+  padding: 10px 15px;
+}
+
+.detail .share-tips .name {
+  text-align: center;
+  font-size: 17px;
+  margin: 10px 0;
+}
+
+.detail .share-tips .tips {
+  color: #999;
+  margin-bottom: 10px;
+}
+
+.detail .share-tips .qr {
+  text-align: center;
+}
+
+.detail .share-tips .qr .img-qr {
+  width: 240px;
+  margin: 10px 0;
+}
+
+.detail .weui-cells:after, .detail .weui-cells:before{
+  display: none;
+}
+
+.detail .weui-cells .avatar {
+  width: 60rpx;
+  height: 60rpx;
+  border-radius: 60rpx;
+  margin-right: 8px;
+}
+
+.detail .weui-cells .weui-cell__bd {
+  font-size: 14px;
+  padding-right: 10px;
+}
+
+.detail .weui-cells .weui-cell__ft {
+  font-size: 12px;
+  color: #999;
+}
+
+.detail .weui-cells:after {
+  border-bottom: 0;
+}
+
+.sign-up {
+  padding: 3% ;
+}
+
+.sign-up .avatar{
+    text-align: center;
+}
+
+.sign-up .img-avatar{
+    width: 80rpx;
+    height: 80rpx;
+    margin: 30rpx auto;
+}
+
+.sign-up .edit{
+    color: #999;
+    text-align: center;
+    margin-bottom: 30rpx;
+}
+
+.sign-up .img-edit{
+    width: 34rpx;
+    height: 34rpx;
+    margin-left: 5px;
+}
+
+.sign-up .weui-textarea {
+  width: 94%;
+  border: 1px solid #e6e6e6;
+  background-color: #f5f5f5;
+  border-radius: 10rpx;
+  padding: 10px;
+}
+
+.sign-up .weui-cells{
+    border-radius: 10rpx;
+}
+
+.sign-up .radio{
+    margin-right: 40rpx;
+}
+
+.sign-up .weui-btn-area {
+  margin: 80rpx 0 0 0;
+}
+
+.sign-up .weui-btn-area .weui-btn_primary {
+  background-color: #3fc380;
+  color: #fff;
+}
+
+.share {
+  padding: 20rpx;
+  background-color: #f5f5f5;
+}
+
+.share .weui-panel__bd {
+  padding: 30rpx;
+  color: #999;
+}
+
+.share .weui-panel__bd .img {
+  text-align: center;
+  margin-top: 15px;
+  color: #4c4c4c;
+}
+
+.share .weui-panel__bd .img .qr-img {
+  width: 240px;
+}
+
+.modal{
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1000;
+    display: none;
+}
+
+.modal.active{
+    display: block;
+}
+
+.modal .mask{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0,0,0,.5);
+    z-index: 1020;
+}
+
+.modal .modal-body{
+    padding: 40rpx;
+}
+
+.modal .modal-body .title{
+    font-size: 34rpx;
+    text-align: center;
+    margin-bottom: 40rpx;
+}
+
+.modal .modal-dialog{
+    width: 560rpx;
+    border-radius: 10px;
+    background-color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    z-index: 1040;
+}
+
+.modal .modal-footer{
+    line-height: 100rpx;
+    text-align: center;
+    font-size: 36rpx;
+    border-top: 1px solid #d3d3d5;
+}
+
+.modal .modal-footer .btn-success{
+    color: #3fc380;
+}
+.accounts .search{
+  padding: 30rpx;
+  background-color: #efeff4;
+}
+.accounts .search .weui-input{
+  background-color: #fff;
+  line-height: 108rpx;
+  text-align: center;
+  border-radius: 10rpx;
+}
+.accounts .join-num{
+  border-bottom: 1px solid #f5f5f5;
+  text-align: left;
+}
+.accounts .list-applicant{
+    padding: 0 30rpx;
+}
+.accounts .list-applicant .item{
+  padding: 20rpx 140rpx 20rpx 100rpx;
+  position: relative;
+  border-bottom: 1px solid #f5f5f5;
+}
+.accounts .item .avatar{
+  width: 80rpx;
+  height: 80rpx;
+  border-radius: 100%;
+  position: absolute;
+  left:0;
+  top: 20rpx;
+}
+.accounts .btn{
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 140rpx;
+    height: 120rpx;
+}
+.accounts .btn .weui-btn{
+    width: 140rpx;
+    height: 60rpx;
+    border: none;
+    line-height: 60rpx;
+    font-size: 13px;
+    margin-top: 30rpx;
+    padding: 0 3rpx;
+}
+.accounts .btn .weui-btn_primary{
+    color:#fff;
+    background-color: #3fc380;
+}
+.accounts .btn .weui-btn_default{
+    color: #666;
+    background-color: #e6e6e6;
+}
+.accounts .info{
+    text-align: left;
+}
+.accounts .username{
+    margin-right: 30rpx;
+}
+.accounts .nickname{
+    font-size: 26rpx;
+}
+.accounts .item .empty{
+    background-color: #f0f0f0;
+    padding: 4rpx 6rpx;
+}
+.accounts .participant-info{
+    color: #666;
+    font-size: 28rpx;
+}

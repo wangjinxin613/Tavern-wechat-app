@@ -1,0 +1,52 @@
+<view class="page sign-up div">
+  <form bindsubmit="onFormSubmit" bindreset="onFormReset">
+    <view class="avatar">
+      <image class="img-avatar" src="data:image/png;base64,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"></image>
+    </view>
+    <view class="edit">
+      编辑昵称，让我知道你是谁
+      <image class="img-edit" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAIGNIUk0AAHolAACAgwAA+f8AAIDpAAB1MAAA6mAAADqYAAAXb5JfxUYAAAImSURBVHjatNc/SxxRFIfhZwejsESENMtNaWOTLkJqQ0xj/AKxMkHTC1rkIwQi6QJaCBZWqRKTRtC0gkVaIVjuZQsLoyhZUqS5Gwazu7O7M55y5nJezrnnz+/Wms2mAayORcxjFtOYTP8ucYYTHOBLCOG6yGGtANzABlZx32B2hS28CyG0eh3K+jhYwSnWhoBKZ9dwGmNcGSbicezgpWpsD8shhHa/iMexXyFU8rUfYxzvB95JBVS1zSffXcErFUT6C6/wBje3I8/feeeOG6mQpkpCn4cQjiHG+BTfMJE7c4GZEEKrE/FGSejv1M/nnQ8hhEPs3jo3lVhqzWazjtaQLZO3G7zADN5iLoTwM8ZYxzEedenzxliaSKWgKbrDGCMcxRgX8KELtNPni2MlqjgP7aT3Y4zxHn6g1q/KszR7R03vYf5j6tVnBVCYzdLArwI6gU/p6opseiy3ZcpA62nizQ3oZzIbsk8XKoD+m1yXgw4HHHXZ00NDcZmlJd7P/qDdQxyMAoWzLCmHfvYVrxPkSQVQOMmSXOlnu/icg8+VhMJB0cg8x8NcqtfwvuQGu0Ijw3XSSL3UQy2ty+8VQGErhHBdtBYP8BgPKhIE/63FFtZ7KIeqoLDeUZ75AbKdUntXthdC2O6luZYHqPKRqjj57in22mkWVxn5Xlqf7SJB38ZSej1clCyk1RDC0m1o0UtiO8mZzdR7w/TpZqre7VHfTnf2aPs7ABqtuDTigUNyAAAAAElFTkSuQmCC"></image>
+    </view>
+    <view class="modal modal-conform">
+      <view class="modal-dialog">
+        <view class="modal-body">
+            <view class="title">
+                编辑昵称
+            </view>
+            <input class="weui-input" type="text" placeholder="请输入文本"/>
+        </view>
+        <view class="modal-footer">
+            <navigator url="" class="btn btn-success">确定</navigator>
+        </view>
+      </view>
+      <view class="mask"></view>
+    </view>
+    <textarea class="weui-textarea textarea" name="remark" placeholder="请写下您的建设性建议，提交给主办方，如果没有，直接提交按钮，即可报名成功" rows="10" />
+    <view class="weui-cells weui-cells_form">
+      <view class="weui-cell">
+        <view class="weui-cell__hd"><label class="weui-label">真实姓名</label></view>
+        <view class="weui-cell__bd">
+          <input class="weui-input" type="text" placeholder="请输入姓名"/>
+        </view>
+      </view>
+      <view class="weui-cell">
+        <view class="weui-cell__hd"><label class="weui-label">手机号</label></view>
+        <view class="weui-cell__bd">
+          <input class="weui-input" type="number" placeholder="请输入手机号"/>
+        </view>
+      </view>
+      <view class="weui-cell">
+        <radio-group class="radio-group" bindchange="radioChange">
+          <label class="radio" wx:for="{{items}}">
+            <radio value="{{item.name}}" checked="{{item.checked}}"/>{{item.value}}
+          </label>
+        </radio-group>
+      </view>
+    </view>
+    <view class="weui-btn-area div">
+      <button  formType="submit" style="color:#ffffff" class="weui-btn weui-btn_primary button">
+        报名
+      </button>
+    </view>
+  </form>
+</view>

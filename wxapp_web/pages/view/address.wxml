@@ -1,0 +1,2 @@
+<!--wn_storex/pages/view/address.wxml-->
+<web-view src="{{url}}" ></web-view>

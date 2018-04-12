@@ -1,0 +1,22 @@
+<!--pay.wxml-->
+<view class="weui-toptips weui-toptips_warn" wx:if="{{showTopTips}}">{{tip}}</view>
+<view class="container">
+  <view class="h2">
+    发起支付：
+  </view>
+  <form bindsubmit="pay">
+    <view class="weui-cells__title">支付金额</view>
+    <view class="weui-cells weui-cells_after-title">
+      <view class="weui-cell weui-cell_input">
+        <view class="weui-cell__bd">
+          <input class="weui-input" type="number" name="sum" placeholder="请输入文本" />
+        </view>
+      </view>
+    </view>
+    <view class="weui-btn-area">
+      <button class="weui-btn" type="primary" form-type="submit">支付</button>
+    </view>
+  </form>
+</view>
+<import src="/we7/pages/templates/footer.wxml" />
+<template is="footerWx" data="{{...tabBar}}" />

@@ -4,14 +4,17 @@
 		"urlCheck": true,
 		"es6": true,
 		"postcss": true,
-		"minified": true,
+		"minified": false,
 		"newFeature": true
 	},
 	"compileType": "miniprogram",
 	"libVersion": "1.9.91",
 	"appid": "wx5243cc086ecc3058",
-	"projectname": "%E8%A7%A3%E5%BF%A7%E9%A9%BF%E7%AB%99lite",
-	"isGameTourist": false,
+	"projectname": "%E8%A7%A3%E5%BF%A7de%E5%B0%8F%E9%85%92%E9%A6%86",
+	"svr": "",
+	"client": "",
+	"qcloudRoot": "",
+	"miniprogramRoot": "",
 	"condition": {
 		"search": {
 			"current": -1,
@@ -22,7 +25,6 @@
 			"list": []
 		},
 		"game": {
-			"currentL": -1,
 			"list": []
 		},
 		"miniprogram": {
@@ -30,20 +32,26 @@
 			"list": [
 				{
 					"id": -1,
-					"name": "写信",
-					"pathName": "pages/add/index",
+					"name": "test",
+					"pathName": "we7/pages/index/index",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "test1",
+					"pathName": "we7_wxappdemo/pages/index/index",
+					"query": ""
+				},
+				{
+					"id": 2,
+					"name": "发布",
+					"pathName": "wjx_jieyou/add/index",
 					"query": ""
 				},
 				{
 					"id": -1,
 					"name": "我的",
-					"pathName": "pages/my/index",
-					"query": ""
-				},
-				{
-					"id": -1,
-					"name": "信详情",
-					"pathName": "pages/my/detail",
+					"pathName": "wjx_jieyou/my/index",
 					"query": ""
 				}
 			]

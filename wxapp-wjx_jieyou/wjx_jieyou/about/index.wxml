@@ -1,0 +1,67 @@
+<view class="head">
+	<image src="http://jy.youzhis.cn/img/headimg.jpg" style="border-radius:100px"/>
+	<view style="padding:15px 0">解忧小酒馆  v2.0</view>
+</view>
+
+<view class="box">
+	<view class="guanyu">
+		关于开发者	
+	</view>
+	
+	<view>
+		<view class="xian">
+		</view>
+		<view class="right">开发者微信<text class="body">wangjinxin613</text></view>
+	</view>
+	<view>
+		<view class="xian">
+		</view>
+		<view class="right">开发者留言<text class="body" decode="true">建议与反馈可以添加作者微信。当然也可以交个朋友啦，五湖四海辣么大，遇见也是一种缘分。#感谢各位慷慨解囊的同学对解忧小酒馆的认可</text></view>
+	</view>
+	<view>
+		<view class="xian">
+		</view>
+		<view class="right">公众号<text class="body"># 醉翁儿的小酒馆 # 关注走一波啊~</text></view>
+	</view>
+</view>
+
+<view class="box" style="margin-top:15px;">
+	<view class="guanyu">
+		小酒馆怎么玩
+	</view>
+	<view>
+		<view class="xian">
+		
+		</view>
+		<text class="body" decode="{{true}}">在这里，如果您愿意，可以向我倾诉一切烦恼，我将尽我所能，为您解答。每一个孤独的灵魂都值得不被忽视，你也可以选择给其他人解答烦恼，微小的安慰就会让人铭记一生
+    &nbsp;&nbsp;&nbsp;&nbsp;我想让你记住，而不是仅仅知道，
+    &nbsp;&nbsp;&nbsp;&nbsp;无论什么时候，
+	&nbsp;&nbsp;&nbsp;&nbsp;随时随地，为你效劳。
+		</text>
+		
+	
+	</view>
+</view>
+
+<view class="box" style="margin-top:15px;">
+	<view class="guanyu">
+		使用小技巧
+	</view>
+	<view>
+		<view class="xian">
+		</view>
+		<view class="right">小技巧一<text class="body">点击右上角的三个小点点，即可进行转发，看到有意思的信可以分享给好友啦~</text></view>
+		<view class="xian">
+		</view>
+		<view class="right">小技巧二<text class="body">如果遇到信件加载不出来或者无法回信的情况，请尝试重启一下小程序或者将情况反馈给开发者，我们会第一时间修复</text></view>
+	</view>
+</view>
+<!--
+http://qr.youzhis.cn/img/xingqiu.jpg
+-->
+<view class="box1" style="margin-top:15px;">
+	<button class="btn" bindtap="shoutu" data-src="http://qr.youzhis.cn/img/zanshang.jpg">打赏</button>
+	<button class="btn" bindtap="shoutu" data-src="http://youzhis.cn/src/gongzhonghao.jpg">关注我们</button>
+	<button class="btn" open-type='share'>分享好友</button>
+	<view class="clear"></view>
+</view>

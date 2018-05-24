@@ -1,0 +1,31 @@
+<!--pages/my/detail.wxml-->
+
+<view class="head1" style="display:{{btnDisplay}}">
+     <view class="head2">
+          <view class="head3">
+               <image src="http://jy.youzhis.cn/img/headimg.jpg" class="headimg"></image>
+          </view>
+     </view>
+</view>
+<view class="zhi" style="display:{{btnDisplay}}">
+     致{{userInfo.wxInfo.nickName}}：
+</view>
+
+<view class="body" style="display:{{btnDisplay}}">
+     {{data_list.body}}
+</view>
+<view class="btn" bindtap="huixin" style="display:{{btnDisplay}}">
+     我要回信
+</view>
+
+
+<view class="huixin" style="height:{{huiH}};overflow:hidden;transition:all 2s;">
+<form report-submit="true" bindsubmit='formSubmit'>
+     <textarea name="content"></textarea>
+     <button formType="submit">提交</button>
+     <view class="xianshi" bindtap='bodyDisplay' style="font-size: 0.8em;">{{bodyBtnTxt}}来信内容</view>
+     <view class="body" style='padding-top:10px;display:{{bodyDisplay}}'>
+          {{data_list.body}}
+     </view>
+	</form>
+</view>

@@ -1,0 +1,69 @@
+<!--pages/my/index.wxml-->
+<view class="border"></view>
+<navigator url="/wjx_jieyou/my/detail" open-type="navigate" hover-class="none">
+     <view class="left">
+          <view class="single">
+               <view class="top-text" style="text-align:center">
+                    <text decode="true">
+		写给您的第一封信</text>
+               </view>
+               <view class="send-user">醉翁儿</view>
+               <view class="clear"></view>
+          </view>
+          <view class="crcle"></view>
+          <view class="time">
+               <view class="t1">2018.02.16</view>
+               <view class="t2">22:34</view>
+          </view>
+     </view>
+</navigator>
+<!-- 写信列表 -->
+<block wx:for="{{data_list}}" wx:key="key">
+     <navigator url="/wjx_jieyou/my/detail?id={{item.id}}" open-type="navigate" hover-class="none">
+          <view class="left right">
+               <view class="single">
+                    <view class="top-text">{{item.body}}</view>
+                    <view class="send-user">{{item.nickname}}</view>
+               </view>
+               <view class="crcle"></view>
+               <view class="time">
+                    <view class="t1">{{item.xie_date}}</view>
+                    <view class="t2">{{item.xie_time}}</view>
+               </view>
+          </view>
+     </navigator>
+     <view class="clear"></view>
+     <!-- 醉翁回信 -->
+     <navigator url="/wjx_jieyou/my/detail?id={{item.id}}&type=1" open-type="navigate" hover-class="none">
+          <view class="left" wx:if="{{item.huixin != null}}">
+               <view class="single">
+                    <view class="top-text">{{item.huixin}}</view>
+                    <view class="send-user">醉翁儿先生</view>
+
+               </view>
+               <view class="crcle"></view>
+               <view class="time">
+                    <view class="t1">{{item.hui_data}}</view>
+                    <view class="t2">{{item.hui_time}}</view>
+               </view>
+          </view>
+     </navigator>
+     <!-- 其他人回信 -->
+     <block wx:for="{{item.huixinList}}">
+          <navigator url="/wjx_jieyou/my/detail?id={{item.id}}&type=2" open-type="navigate" hover-class="none" >
+               <view class="left">
+                    <view class="single">
+                         <view class="top-text">{{item.content}}</view>
+                         <view class="send-user">{{item.nickname}}</view>
+
+                    </view>
+                    <view class="crcle"></view>
+                    <view class="time">
+                         <view class="t1">{{item.hui_data}}</view>
+                         <view class="t2">{{item.hui_time}}</view>
+                    </view>
+               </view>
+          </navigator>
+     </block>
+</block>
+<view style="padding-bottom:80px;"></view>

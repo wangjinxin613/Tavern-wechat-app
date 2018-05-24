@@ -1,0 +1,41 @@
+/* wjx_jieyou/member/index.wxss */
+@import "/app.wxss";
+page{
+	background: rgb(234,230,227);
+}
+.header{
+	background: #fff;
+	padding: 30px 0 20px;
+}
+.header image{
+	margin: auto;
+	width: 20vw;
+	height: 20vw;
+	border:1px solid #ccc;
+	border-radius: 50%;
+	display: block;
+}
+.header .memberName{
+	font-size: 0.8em;
+	text-align: center;
+	margin-top: 15px;
+	color: #555;
+}
+.memberList{
+	background: #fff;
+	margin-top: 10px;
+	width: 100%;
+}
+.memberList .single:hover{
+
+}
+.memberList .single{
+	font-size: 0.85em;
+	color: #555;
+	padding: 12px 15px;
+	border-bottom: 1px solid rgb(234,230,227);
+	background: url("https://youzhis.cn/src/right.png");
+	background-position: right 15px center;
+	background-repeat: no-repeat;
+	background-size: 14px;
+}

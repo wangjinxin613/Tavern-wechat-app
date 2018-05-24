@@ -1,0 +1,54 @@
+/* pages/about/about.wxss */
+page{
+	font-size: 14px;
+	background:#eee;
+	color:#888;
+	text-align: justify;
+}
+.head {
+	text-align: center;
+	padding: 20px 0 0 0;
+	background:#fff;
+}
+.head image{
+	width:50px;
+	height:50px;
+}
+.box{
+	background:#fff;
+	padding:15px 15px;
+	line-height: 30px;
+}
+.xian{
+	width:3px;
+	height:14px;
+	background:#eee;
+	float: left;
+	margin-top:7px;
+}
+.right{
+	margin-left:10px;
+	
+}
+.body{
+	margin-left:8px;
+	color:#444;
+	line-height: 18px;
+
+}
+.box1{
+	background: #fff;
+	padding:10px 0;
+}
+.btn{
+	width:29%;
+	float: left;
+	margin-left:3.2%;
+	background:#fff;
+	border-color: #666;
+	color: #999;
+	font-size: 14px;
+}
+.clear{
+	clear:both;
+}

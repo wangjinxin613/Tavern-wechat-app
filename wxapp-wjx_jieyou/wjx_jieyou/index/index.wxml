@@ -1,0 +1,62 @@
+<!--index.wxml-->
+<view style="{{tuisongDis.pageStyle}}">
+<view class="index-head-img">
+     <image src="/img/head-img.png"></image>
+</view>
+
+<!-- 信 -->
+<view class="xin">
+     <view class="title">你有一封新的信件</view>
+     <view class="border"></view>
+	<button class="tuisong-btn" bindtap='tuisong'>醉翁儿寄语</button>
+	
+     <view class="xin-list" bindtouchend="moveItem" bindtouchstart="moveStart">
+          <block wx:for="{{xinList}}" wx:key="key" wx:for-index="idx">
+               <view class="single {{item.isCom?'active':''}}" data-idx="{{item.xinId}}" style="opacity:{{item.display}};transform: translateX({{item.slateX}}) scale({{item.scale}});z-index:{{item.zIndex}};transform-origin: 100% 50% 0;{{item.style}}" bindtap='location' >
+                    <view class="xin-shou">
+                         致 {{item.to}}
+                    </view>
+                    <view class="xin-body">
+                         {{item.msg}}
+                    </view>
+                    <view class="shenglue">···</view>
+                    <view class="xin-xie">By {{item.from}}</view>
+               </view>
+          </block>
+     </view>
+</view>
+<block wx:if="{{isShowQuan == false}}">
+<button size="mini" class="shouquan" open-type="getUserInfo" bindgetuserinfo="updateUserInfo" >授权微信登陆</button>
+</block>
+<!-- footer -->
+<view class="footer">
+     <view class="single">
+          <image src="/img/home.png"></image>
+     </view>
+
+     <view class="single ">
+          <navigator url="/wjx_jieyou/add/index" open-type="navigate" hover-class="none">
+               <image src="/img/add.png" class="foot_img2"></image>
+          </navigator>
+     </view>
+
+     <view class="single">
+          <navigator url="/wjx_jieyou/member/index" open-type="reLaunch" hover-class="none">
+               <image src="/img/my.png"></image>
+          </navigator>
+     </view>
+     <view class="clear"></view>
+</view>
+</view>
+<!-- 推送消息框  -->
+<view style="width:100vw;height:100vh;position:fixed;background:transtion;display:{{tuisongDis.display}};">
+<view class="tuisong" style="{{tuisongDis.btnStyle}};transition: all 5s;">
+	<view class="head-txt">
+		{{todayDay}}
+	</view>
+	<view class="body">
+		一天很短，短得来不及拥抱清晨，就已经手握黄昏。一年很短，短得来不及细品初春殷红窦绿，就要打点素裹秋霜。一生很短，短的来不及享用美好年华，就已经身处迟暮。总是经过的太快，领悟的太晚，我们要学会珍惜。珍惜人生路上的亲情、友情、同事情、同学情、朋友情。一旦擦身而过，也许永不邂逅。
+	</view>
+	<button class="close" bindtap='tuisong'>关闭</button>
+</view>
+</view>

@@ -1,0 +1,57 @@
+<!--wjx_jieyou/member/index.wxml-->
+<view class="header">
+     <image src="{{userInfo.wxInfo.avatarUrl}}"></image>
+     <view class="memberName">{{userInfo.wxInfo.nickName}}</view>
+</view>
+<view class="memberList">
+     <navigator url='../my/index'>
+          <view class="single">
+               <text>我的信件</text>
+          </view>
+     </navigator>
+	<!--
+     <view class="single">
+          <text>我的回信</text>
+     </view>
+		
+     <navigator url='../about/setting'>
+          <view class="single">
+               <text>个人设置</text>
+          </view>
+     </navigator>
+-->
+     <navigator url='../about/index'>
+          <view class="single">
+               <text>关于解忧小酒馆</text>
+          </view>
+     </navigator>
+	<!--
+     <view class="single" bindtap="shoutu" data-src="http://qr.youzhis.cn/img/xingqiu.jpg">
+          <text>和醉翁儿成为好朋友</text>
+     </view>
+	-->
+</view>
+
+<!-- footer  -->
+<view class="footer">
+
+     <view class="single">
+          <navigator url="/wjx_jieyou/index/index" open-type="reLaunch" hover-class="none">
+               <image src="/img/home.png"></image>
+          </navigator>
+     </view>
+
+
+     <view class="single ">
+          <navigator url="/wjx_jieyou/add/index" open-type="navigate" hover-class="none">
+               <image src="/img/add.png" class="foot_img2"></image>
+          </navigator>
+     </view>
+
+     <view class="single">
+          <navigator url="/wjx_jieyou/member/index" open-type="reLaunch" hover-class="none">
+               <image src="/img/my.png"></image>
+          </navigator>
+     </view>
+     <view class="clear"></view>
+</view>

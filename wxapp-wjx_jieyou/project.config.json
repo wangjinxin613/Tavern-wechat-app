@@ -1,0 +1,88 @@
+{
+	"description": "项目配置文件。",
+	"setting": {
+		"urlCheck": true,
+		"es6": true,
+		"postcss": true,
+		"minified": true,
+		"newFeature": true
+	},
+	"compileType": "miniprogram",
+	"libVersion": "1.9.92",
+	"appid": "wx473fe10968a7858d",
+	"projectname": "%E8%A7%A3%E5%BF%A7%E5%B0%8F%E9%85%92%E9%A6%86%E6%B5%8B%E8%AF%95%E7%89%88",
+	"svr": "",
+	"client": "",
+	"qcloudRoot": "",
+	"miniprogramRoot": "",
+	"condition": {
+		"search": {
+			"current": -1,
+			"list": []
+		},
+		"conversation": {
+			"current": -1,
+			"list": []
+		},
+		"plugin": {
+			"current": -1,
+			"list": []
+		},
+		"game": {
+			"list": []
+		},
+		"miniprogram": {
+			"current": -1,
+			"list": [
+				{
+					"id": -1,
+					"name": "test",
+					"pathName": "we7/pages/index/index",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "test1",
+					"pathName": "we7_wxappdemo/pages/index/index",
+					"query": ""
+				},
+				{
+					"id": 2,
+					"name": "发布",
+					"pathName": "wjx_jieyou/add/index",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "我的",
+					"pathName": "wjx_jieyou/my/index",
+					"query": ""
+				},
+				{
+					"id": 4,
+					"name": "回信",
+					"pathName": "wjx_jieyou/huixin/huixin",
+					"query": "id=1228"
+				},
+				{
+					"id": -1,
+					"name": "个人中心",
+					"pathName": "wjx_jieyou/member/index",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "关于",
+					"pathName": "wjx_jieyou/about/index",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "个人设置",
+					"pathName": "wjx_jieyou/about/setting",
+					"query": ""
+				}
+			]
+		}
+	}
+}

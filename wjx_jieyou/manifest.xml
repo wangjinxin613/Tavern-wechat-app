@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns="http://www.we7.cc" versionCode="">
+	<application setting="false">
+		<name><![CDATA[解忧小酒馆]]></name>
+		<identifie><![CDATA[wjx_jieyou]]></identifie>
+		<version><![CDATA[3.0]]></version>
+		<type><![CDATA[services]]></type>
+		<ability><![CDATA[解忧小酒馆]]></ability>
+		<description><![CDATA[解忧小酒馆]]></description>
+		<author><![CDATA[18841692393]]></author>
+		<url><![CDATA[http://youzhis.cn]]></url>
+	</application>
+	<platform>
+		<subscribes>
+		</subscribes>
+		<handles>
+		</handles>
+		<rule embed="false" />
+		<card embed="false" />
+		<supports>
+			<item type="wxapp" />
+		</supports>
+	</platform>
+	<bindings>
+		<menu>
+			<entry title="会员信息" do="MemberList" state="" direct="false" />
+			<entry title="解忧信列表" do="XinList" state="" direct="false" />
+			<entry title="最新回信列表" do="HuiList" state="" direct="false" />
+			
+		</menu>
+		<page>
+			<entry title="首页" do="/pages/index/index" state="" direct="" />
+		</page>
+	</bindings>
+	<permissions>
+	</permissions>
+	<install><![CDATA[install.php]]></install>
+	<uninstall><![CDATA[]]></uninstall>
+	<upgrade><![CDATA[]]></upgrade>
+</manifest>

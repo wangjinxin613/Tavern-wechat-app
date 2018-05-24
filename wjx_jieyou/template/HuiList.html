@@ -1,0 +1,81 @@
+{template 'common/header'}
+<!--
+<ul class="nav nav-tabs" >
+    <li class="active"><a href="{url 'site/entry/baselist',array('m'=>'monai_xiaochengxu')}">活动管理</a></li>
+    <li><a href="{url 'site/entry/base',array('m'=>'monai_xiaochengxu')}">添加活动</a></li>
+</ul>
+-->
+<p>总回信：{$all}</p>
+<div>
+    <form action="" method="post" class="form-horizontal form">
+        <input type="hidden" name="token" value="{$_W['token']}">
+        <table class="table-striped table-bordered table-hover dataTables-example table">
+            <thead class="navbar-inner">
+            <th>回信人昵称</th>
+            <th>写信内容</th>
+            <th>回信内容</th>
+            <th>回信时间</th>
+
+            <th>操作</th>
+
+            </thead>
+            <tbody id="level-list">
+            {loop $list $index $item}
+            <tr>
+                <td>
+
+                    {$item['nickname']}
+                </td>
+                <td>
+                    {$item['body']}
+                </td>
+                <td>
+                    {$item['content']}
+                </td>
+                <td>
+                    <div class="type-parent"><?php echo date("Y-m-d H:i:s",$item['time']); ?></div>
+                </td>
+
+                <td>
+                    <a href="{url 'site/entry/xindetail',array('id'=>$item['id'],'m'=>'wjx_jieyou')}" title="回信" class="btn btn-sm btn-primary"><i ></i>查信</a>
+                </td>
+            </tr>
+            {/loop}
+            </tbody>
+        </table>
+
+</div>
+<div style="padding-top: 10px;float: right;">
+    {$pager}
+</div>
+</form>
+</div>
+</div>
+<script type="text/javascript">
+    $('.is_sale').click(function(){
+
+        var  obj= $(this);
+        if($(obj).html() == '已开启')
+        {
+            alert('当前活动已开启');
+            return false;
+        }
+        $.post("/web/index.php?c=site&a=entry&do=Base_status&m=monai_xiaochengxu",{id:$(this).val()},function(result){
+            if(result=='1')
+            {
+                $('.is_sale').attr('class','is_sale btn btn-minier btn-danger');
+                $('.is_sale').text('未开启');
+                $(obj).attr('class','is_sale btn btn-minier btn-yellow');
+                $(obj).text('已开启');
+            }
+            else
+            {
+                $(obj).attr('class','btn btn-minier btn-danger');
+                $(obj).text('未开启');
+            }
+        });
+
+        return false;
+    });
+</script>
+{template 'common/footer'}

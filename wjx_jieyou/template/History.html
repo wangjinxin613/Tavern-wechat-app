@@ -1,0 +1,31 @@
+{template 'common/header'}
+<style>
+	.avatar{
+		width:70px;
+		height:70px;
+		border-radius:100px;
+	}
+	.body{
+		width:70%;
+		margin-left:13%;
+		margin-top:40px;
+		
+	}
+</style>
+
+	{loop $list $index $item}
+       
+			<input name="token" type="hidden" value="{$_W['token']}" />
+            <div class="form-group" style="text-align:center">
+					
+					<img src="{$item['avatar']}" class="avatar">
+					
+            </div>
+		<p class="body" style="text-indent:2em;font-size:16px;">{$item['body']}</p>
+		<p class="body" style="text-indent:2em;font-size:16px;text-align:right">{$item['nickname']}<br><?php echo date("Y-m-d",$item['time']); ?></p>
+		<br>	<br>
+		<p class="body" style="text-indent:2em;font-size:16px;">回信：</p>
+		<div class="body" style="text-indent:2em;font-size:16px;">{$item['huixin']}</div>
+		<br><br><br><br><br><br><br>
+	{/loop}
+{template 'common/footer'}

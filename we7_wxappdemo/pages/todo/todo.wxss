@@ -1,9 +1,0 @@
-/* todo.wxss */
-
-.done {
-  background-color: rgba(78, 78, 78, 0.1);
-}
-
-.weui-cells__title {
-  padding-top: 20rpx;
-}

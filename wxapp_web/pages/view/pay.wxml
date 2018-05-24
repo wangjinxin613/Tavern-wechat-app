@@ -1,2 +1,0 @@
-<!--wn_storex/pages/view/pay.wxml-->
-<web-view src="{{url}}"></web-view>

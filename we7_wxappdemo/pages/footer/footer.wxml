@@ -1,9 +1,0 @@
-<!--footer.wxml-->
-<text>footer.wxml</text>
-<view class="container">
-  <view class="h2">动态改变底部:</view>
-  <button type="default" bindtap="change">{{isFooter ? '改变底部为哈哈' : '复原'}}</button>
-</view>
-<!--<import src="/we7/pages/templates/footer.wxml" />
-<template is="footerWx" data="{{...tabBar}}" />-->
-<footer tab-bar="{{tabBar}}"></footer>
